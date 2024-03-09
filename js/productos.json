@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1, 
+        "nombre": "Buzo Garra",
+        "precio": 3000,
+        "cantidad": 0,
+        "imagen": "./img/Buzo Garra.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Buzo Snax H",
+        "precio": 7000,
+        "cantidad": 0,
+        "imagen": "./img/Buzo Snax Hombre.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Buzo Waves M",
+        "precio": 5000,
+        "cantidad": 0,
+        "imagen": "./img/Buzo Waves Mujer.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Jeans Levi's H",
+        "precio": 7000,
+        "cantidad": 0,
+        "imagen": "./img/Jeans Levis Hombre.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Jeans Mxk M",
+        "precio": 8000,
+        "cantidad": 0,
+        "imagen": "./img/Jeans Mistica Mujer.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Remera Wild H",
+        "precio": 4000,
+        "cantidad": 0,
+        "imagen": "./img/Remera Wild.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Remera Wild M",
+        "precio": 4000,
+        "cantidad": 0,
+        "imagen": "./img/Remera Calabera Mujer.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Jeans Crug M",
+        "precio": 7000,
+        "cantidad": 0,
+        "imagen": "./img/Jeans Crug.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Chomba Salman",
+        "precio": 4000,
+        "cantidad": 0,
+        "imagen": "./img/Chomba Salman.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Falda Rusty",
+        "precio": 5000,
+        "cantidad": 0,
+        "imagen": "./img/Falda Rusty.avif"
+    },
+    {
+        "id": 11,
+        "nombre": "Camisa Salman",
+        "precio": 8000,
+        "cantidad": 0,
+        "imagen": "./img/Camisa Salman.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Gorro Azul",
+        "precio": 3000,
+        "cantidad": 0,
+        "imagen": "./img/Gorro Azul.jpg"
+    }
+]

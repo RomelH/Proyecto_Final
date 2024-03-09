@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-Segu</title>
+    <link rel="icon" type="image/png" href="./img/Logo.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="./img/Logo.png" alt="Segu Indumentaria" class="logo-img">
+        <h1 class="logo-nombre">Segu <br>Indumentaria</h1>
+      </a>
+    
+      <div class="container-icon">
+        <a class="boton-carrito" href="./carrito.html">
+          <div class="container-cart-icon">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-cart"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              />
+            </svg>
+            <div class="count-product">
+              <span id="contador-productos">0</span>
+            </div>
+          </div>
+        </a>  
+      </div>
+    </header>
+
+    <div class="contenedor-carrito">
+      <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. </p>
+
+      <div id="carrito-productos" class="carrito-productos disabled">
+      <!-- Esto se va a completar con el JS -->
+      </div>
+
+      <div id="carrito-acciones" class="carrito-acciones disabled">
+        <div class="carrito-acciones-izquierda">
+          <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAtVJREFUWEetWEtu3DAMJYspAow1B+nvQj1Dskr3mVkXXaVnKNDr9HuQygMECcpCliXrQ9L0pLMIEFsmH6n3nmgjAAIgARA0PwTmYlyj3GqjbP0/hK5/OdllWcun9AjxbrumBySVJDXS2AJreUqH+kznYXhPiLcA8A4QX3JYws7HoPQIBN+R6NN+HL9IgHKfZtpkQGsVPDj35gnxRw0ipi//lvcTuB3R2yvvf8r8W7Ibtwzh7IZrQry37dDSp0kDRDd77z+nZ3n2LHopcsiNHd1wBMS7uJhOwx9/lOWGMB6GIwHeTRUTnQYf1sf9ZEU9ozB2CGB0bgFUJhBaNh5cANwUoFjG3IsGkMwkK6AUoQKUC1hjahJEUWVdmVB+TRFm0eqCeefp5Lw/Tp5cdagww5orKZeUwJhYUgKz9R2Hqq1pAl2WXjKFhuwWUtfgCmUpMuFYssSZzsxZcbzcYocEroVAhIx0FTPiPMYqiARF9CFToHXhFJZRdoivivWhLF3Be3igCIsg6sT8lomAZOvkvUQ2Samjpk5rpLZ0KHOrOEYqyygkvRGQ7s4cqa2dSKanAdo0oLWB1hJYgeaDlqFRlj1nLZLstev9RNBwrpkUxA7phla76nonptNpHlEioJ5zZXuMA9p6YgvQ0g7446Ic3ILmxYnpubJf4xx3SKgDmrVDZWJJleX1PHJopM4vis0owgWyAk1qWjhUc4vz6rhl/WvrdOLyRidzgk8c11sP6bxlW1TGDwh9hHTySw4udEgZP8pB3TDYV80u8K0fHc+U/VKZ7UPF+tFhBHR27vov4n0nxWaW3TLaVi+NzS6Hf1lSp3UPB/fqCfCXMiBuvEWwI3h95f1v6UF1QAsPxQ8MLz4AUPjAsOsChVlsKkvpE9EjAHxDgI97779qVajGKD7IOkV5kZuslwnsv7xKV+CYve8+wDXVyKYwu+C84LIOaQRQkcnDYAr5D0vuk0VzSg/6AAAAAElFTkSuQmCC"/> VACIAR CARRITO</button>
+        </div>
+        <div class="carrito-acciones-derecha">
+          <div class="carrito-acciones-total">
+            <p>Total:</p>
+            <p id="total">$0</p>
+          </div>
+          <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+        </div>
+      </div>
+  
+      <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra.</p>
+  
+    </div>
+    <footer>
+      <p class="texto-footer">© 2024 || Romel Eugenio Huanaco Cruz</p>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/carrito.js"></script>
+  </body>
+</html>
